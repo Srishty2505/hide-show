@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show hide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="hideshow.css">
+</head>
+<body>
+    <div class="test">
+        <div class="box">
+            <h1>This is the modal of javascript</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores ea vitae deserunt est nisi? Quia nam impedit molestias laborum? Accusantium fugit eaque voluptatum temporibus eum. Maxime provident temporibus consectetur numquam?</p>
+            <div class="cut">
+                <span><i class="fa-solid fa-xmark"></i></span>
+            </div>
+               
+        </div>
+        <div class="clicks">
+            <div class="btns">
+                <button>Click me</button>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script>
+        var btn= document.querySelector("button")
+        var cross= document.querySelector("span")
+        
+
+
+
+        cross.addEventListener("click",()=>
+
+        {
+            var tar=document.querySelector(".box")
+            tar.style= "display:none"
+        }) 
+        btn.addEventListener("click",()=>
+        {
+            var tar=document.querySelector(".box")
+            tar.style= "display:block"
+
+
+        }
+    )
+
+    </script>
+</body>
+</html>
